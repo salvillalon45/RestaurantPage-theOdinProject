@@ -1,0 +1,129 @@
+/* Overall */
+/* --------------------------------------- */
+/*html, body, div {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+  line-height: 70px;
+  background-color: red;
+  border-bottom: 2px solid blue ;
+}
+
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  /*width: 100px;*/
+  float: left;
+}
+
+.menu {
+  float: right;
+  list-style: none;
+}
+
+.menu li {
+  float: left;
+  width: 120px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("../assets/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  text-align: center;
+}
+
+.overlay-container {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron-text {
+  position: relative;
+  top: 9rem;
+  padding: 30px;
+  color: white;
+  background-color: #00000094;
+  width: 590px;
+}
+
+.offer-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  /* Made the width smaller and added margin. By changing the width it makes the columns try to fit into this space  */
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.offer-card {
+  background: #0D122B;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #f0f0f0;
+}
+
+button, i {
+  cursor: pointer;
+}
+
+/*.logo-container {*/
+/*  !*display: flex;*!*/
+/*}*/
+
+/*.nav-container {*/
+/*  !*flex-direction: row;*!*/
+/*  !*display: flex;*!*/
+/*  float: right;*/
+/*}*/
+
+/*img {*/
+/*  float: left;*/
+/*}*/
+
+/*!*header {*!*/
+/*!*  display: flex;*!*/
+/*!*}*!*/
+
+/*.logo {*/
+/*  height: 150px;*/
+/*}*/
+
+/*.nav-ul {*/
+/*  !*list-style-type: none;*!*/
+/*  !*display: inline-flex;*!*/
+/*  list-style: none;*/
+/*  !*margin: 0;*!*/
+/*  !*padding: 0;*!*/
+/*}*/
+
+/*.nav-link {*/
+/*  display: inline-block;*/
+/*}*/
