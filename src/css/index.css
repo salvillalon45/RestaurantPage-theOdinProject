@@ -1,11 +1,5 @@
 /* Overall */
 /* --------------------------------------- */
-/*html, body, div {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  box-sizing: border-box;*/
-/*}*/
-
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +12,6 @@ header {
   height: 70px;
   line-height: 70px;
   background-color: #f3ecdc;
-  /*border-bottom: 2px solid blue ;*/
 }
 
 .nav-container {
@@ -28,6 +21,9 @@ header {
 
 .logo {
   float: left;
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .menu {
@@ -66,7 +62,11 @@ header {
   width: 590px;
 }
 
-.offer-container {
+.jumbotron-text h1, h2 {
+  font-weight: 200;
+}
+
+.offer-container, .menu-container {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -76,7 +76,7 @@ header {
   max-width: 900px;
 }
 
-.offer-card {
+.offer-card, .menu-card {
   background: white;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -85,37 +85,45 @@ header {
   align-items: center;
 }
 
-.offer-card img {
+.offer-card img, .menu-card img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.offer-card h3 {
+.offer-card h3, .menu-card h3 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 23px;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
-.offer-container-text {
+.offer-card h4, .menu-card h4 {
+  font-weight: 100;
+}
+
+.offer-container-text, .menu-container-text {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  font-family: 'Work Sans', sans-serif;
 }
 
-body {
-  font-family: 'Roboto Slab', serif;
-  background-color: #f0f0f0;
+.offer-container-text h2 {
+  font-weight: 500;
 }
 
-html, body {
+html, body, #content {
   height: 100%;
 }
 
-body {
+body, #content {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  background-color: #f0f0f0;
 }
 
 main {
@@ -129,15 +137,14 @@ main {
   background-color: #f3ecdc;
   width: 100%;
   margin: 0 auto;
-}
-
-.footer-social-icons {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
 }
 
 .social-icons {
   display: inline-flex;
   list-style: none;
-  margin-top: 30px;
+  margin-top: 20px;
   line-height: 40px;
 }
 
@@ -146,19 +153,48 @@ main {
 }
 
 .fa {
-  font-size: 30px;
+  font-size: 25px;
+  color: black
 }
 
 .fa-linkedin:hover {
-  color: blue;
+  color: #007bb6;
 }
 
+.fa-user:hover {
+  color: #358923;
+}
 
+.our-story-container h1, .location-container h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.our-story-container, .location-container {
+  padding: 30px;
+}
+
+.location-container {
+  text-align: center;
+}
+
+.location-container h1 {
+  margin-bottom: 10px;
+}
+
+.menu-container-text h1 {
+  font-weight: 500;
+  font-size: 50px;
+}
 
 button, i {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
 /*.logo-container {*/
 /*  !*display: flex;*!*/
 /*}*/
