@@ -26,12 +26,18 @@ const menuFactory = function() {
         menuCard5.classList.add("menu-card");
         menuCard6.classList.add("menu-card");
 
-        menuCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>';
-        menuCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>';
-        menuCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>';
-        menuCard4.innerHTML = '<img src="../src/assets/images/pancakes.jpg">\n' + '<h3>Pancakes</h3>';
-        menuCard5.innerHTML = '<img src="../src/assets/images/steak.jpg">\n' + '<h3>Steak</h3>';
-        menuCard6.innerHTML = '<img src="../src/assets/images/shrimps.jpg">\n' + '<h3>Roasted Shrimp</h3>'
+        // menuCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>';
+        menuCard1.innerHTML = '<img src="./assets/images/burger.jpg">\n' + '<h3>Burger</h3>';
+        // menuCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>';
+        menuCard2.innerHTML = '<img src="./assets/images/pho.jpg">\n' + '<h3>Pho</h3>';
+        // menuCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>';
+        menuCard3.innerHTML = '<img src="./assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>';
+        // menuCard4.innerHTML = '<img src="../src/assets/images/pancakes.jpg">\n' + '<h3>Pancakes</h3>';
+        menuCard4.innerHTML = '<img src="./assets/images/pancakes.jpg">\n' + '<h3>Pancakes</h3>';
+        // menuCard5.innerHTML = '<img src="../src/assets/images/steak.jpg">\n' + '<h3>Steak</h3>';
+        menuCard5.innerHTML = '<img src="./assets/images/steak.jpg">\n' + '<h3>Steak</h3>';
+        // menuCard6.innerHTML = '<img src="../src/assets/images/shrimps.jpg">\n' + '<h3>Roasted Shrimp</h3>'
+        menuCard6.innerHTML = '<img src="./assets/images/shrimps.jpg">\n' + '<h3>Roasted Shrimp</h3>'
         menuContainerText.innerHTML = '<h1>Our Menu</h1>';
 
         menuContainer.append(menuCard1);

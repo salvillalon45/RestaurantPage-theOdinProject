@@ -74,9 +74,12 @@ const indexPageFactory = function() {
         offerCard2.classList.add("offer-card");
         offerCard3.classList.add("offer-card");
 
-        offerCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>'
-        offerCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>'
-        offerCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>'
+        // offerCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>';
+        offerCard1.innerHTML = '<img src="./assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>';
+        // offerCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>'
+        offerCard2.innerHTML = '<img src="./assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>'
+        // offerCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>'
+        offerCard3.innerHTML = '<img src="./assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>'
 
         offerContainer.append(offerCard1);
         offerContainer.append(offerCard2);
