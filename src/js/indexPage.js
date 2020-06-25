@@ -1,37 +1,13 @@
 const indexPageFactory = function() {
 
+    let debug = 0;
     const contentMain = document.querySelector("#content");
     const main = document.createElement("main");
     main.classList.add("index-page");
-    // main.classList.add("hidden");
-
-    function createHeader() {
-        console.log("inside createHeader()");
-
-        const header = document.createElement("header");
-        const navContainer = document.createElement("div");
-        const logoContainer = document.createElement("div");
-        const navLinks = document.createElement("nav");
-
-        navContainer.classList.add("nav-container");
-        logoContainer.classList.add("logo-container");
-        navLinks.classList.add("nav-links");
-
-        logoContainer.innerHTML = '<p class="logo">Sal\'s Kitchen</p>';
-        navLinks.innerHTML = '<ul class="menu">\n' + '<li class="nav-link">Our Story</li>\n' + '<li class="nav-link">Menu</li>\n' + '<li class="nav-link">Location</li>\n' + '</ul>'
-
-        navContainer.append(logoContainer);
-        navContainer.append(navLinks);
-
-        header.append(navContainer);
-
-        contentMain.append(header);
-    }
 
     function createJumbotron() {
         console.log("Inside createJumbotron()");
 
-        // Jumbotron section
         const jumbotron = document.createElement("div");
         const overlayContainer = document.createElement("div");
         const jumbotronText = document.createElement("div");
@@ -46,7 +22,6 @@ const indexPageFactory = function() {
         jumbotron.append(overlayContainer);
 
         main.append(jumbotron);
-
         contentMain.append(main);
     }
 
@@ -74,12 +49,14 @@ const indexPageFactory = function() {
         offerCard2.classList.add("offer-card");
         offerCard3.classList.add("offer-card");
 
-        // offerCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>';
-        offerCard1.innerHTML = '<img src="./assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>';
-        // offerCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>'
-        offerCard2.innerHTML = '<img src="./assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>'
-        // offerCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>'
-        offerCard3.innerHTML = '<img src="./assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>'
+        debug === 1 && (offerCard1.innerHTML = '<img src="../src/assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>');
+        debug === 0 && (offerCard1.innerHTML = '<img src="./assets/images/burger.jpg">\n' + '<h3>Burger</h3>\n' + '<h4>Get two burgers</h4>\n' + '<h4>for the price of one</h4>');
+
+        debug === 1 && (offerCard2.innerHTML = '<img src="../src/assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>');
+        debug === 0 && (offerCard2.innerHTML = '<img src="./assets/images/pho.jpg">\n' + '<h3>Pho</h3>\n' + '<h4>Get one pho,</h4>\n' + '<h4>get the second one free</h4>');
+
+        debug === 1 && (offerCard3.innerHTML = '<img src="../src/assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>');
+        debug === 0 && (offerCard3.innerHTML = '<img src="./assets/images/tacos.jpg">\n' + '<h3>Tacos de Carne Asada</h3>\n' + '<h4>Get tacos and</h4>\n' + '<h4>drink combo for a low price</h4>');
 
         offerContainer.append(offerCard1);
         offerContainer.append(offerCard2);
@@ -89,37 +66,11 @@ const indexPageFactory = function() {
         contentMain.append(main);
     }
 
-    function createFooter() {
-        console.log("Inside createFooter()");
-
-        const footer = document.createElement("footer");
-        footer.classList.add("footer");
-
-        footer.innerHTML = '<ul class="social-icons">\n' +
-            '                    <li><span>&copy; 2020 Made by Salvador Villalon</span></li>\n' +
-            '                    <li>\n' +
-            '                        <a href="https://www.linkedin.com/in/salvadorvillalon/" class="social-icon">\n' +
-            '                            <i class="fa fa-linkedin" aria-hidden="true"></i>\n' +
-            '                        </a>\n' +
-            '                    </li>\n' +
-            '                    <li>\n' +
-            '                        <a href="https://salvillalon45.github.io/" class="social-icon">\n' +
-            '                            <i class="fa fa-user" aria-hidden="true"></i>\n' +
-            '                        </a>\n' +
-            '                    </li>\n' +
-            '                </ul>';
-
-        contentMain.append(footer);
-    }
-
     function render() {
-        // createHeader();
         createJumbotron();
         createOfferContainerText();
         createOfferContainer();
-        // createFooter();
     }
-
 
     return {
         render
