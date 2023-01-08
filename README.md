@@ -1,5 +1,5 @@
-# theOdinProject-RestaurantPage
-[TheOdinProject: Javascript] - Project: Restaurant Page
+# Restaurant Page
+[The Odin Project: Javascript] - Project: Restaurant Page
 
 # Summary
 Making a sample Restaurant Page. We will use Javascript alone to generate the entire contents of the website!
